@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+body {
+	min-height: 100dvh;
+	overflow: hidden;
+	background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+	font-family: "Josefin Sans", sans-serif;
+}
+
+.container .page {
+	width: 100%;
+	height: 100dvh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: 65% 100%;
+	background-position: left 0;
+}
+
+.page .page-content {
+	height: 100%;
+	width: 65%;
+	display: flex;
+	justify-content: center;
+	background-image: url(../images/bg-pattern-desktop.svg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.page-content .page-items {
+	width: 450px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-right: 50px;
+	padding: 75px 0 40px;
+}
+
+.page-items .logo {
+	width: 160px;
+}
+
+.page-content .page-text {
+	display: flex;
+	flex-direction: column;
+	margin: auto 0;
+}
+
+.page-text .title {
+	margin-bottom: 30px;
+	line-height: 1.1;
+	text-transform: uppercase;
+	font-size: 6rem;
+	font-weight: 600;
+	letter-spacing: 15px;
+}
+
+.page-text .title span {
+	font-weight: 300;
+	color: var(--Desaturated-Red);
+}
+
+.page-text .text {
+	margin-bottom: 40px;
+	line-height: 1.5;
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: var(--Desaturated-Red);
+}
+
+.page-text .email-form {
+	max-height: 120px;
+	position: relative;
+}
+
+.email-form .email-input {
+	width: 90%;
+	border-radius: 30px;
+	border: 1px solid var(--Desaturated-Red);
+	padding: 18px 50px 18px 30px;
+	background-color: inherit;
+	font-size: 1.6rem;
+}
+.email-input::placeholder {
+	color: var(--Desaturated-Red);
+}
+.email-form.invalid .email-input {
+	border: 3px solid var(--Soft-Red);
+	padding-right: 65px;
+}
+
+.email-form.invalid::after {
+	content: "Please provide a valid email";
+	position: absolute;
+	left: 0;
+	bottom: -30px;
+	font-size: 1.6rem;
+	color: var(--Soft-Red);
+	padding-left: 33px;
+}
+
+.email-form .submit-email {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 30px;
+}
+
+.email-form .submit-email::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	display: none;
+	position: absolute;
+	left: -2vw;
+	background-image: url(../images/icon-error.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.email-form.invalid .submit-email::before {
+	display: block;
+}
+
+.email-form .submit-email button {
+	border: 0;
+	border-radius: 30px;
+	padding: 16px 40px;
+	background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+	box-shadow: 0 10px 25px -3px var(--Desaturated-Red);
+	cursor: pointer;
+}
+.email-form.invalid .submit-email button,
+.email-form .submit-email button:hover {
+	background: hsl(0, 80%, 86%);
+}
+.email-form .submit-email button:active {
+	scale: 0.98;
+}
+
+.hero-desktop {
+	height: 100%;
+	max-width: 45vw;
+	min-width: 35%;
+}
+
+.hero-mobile {
+	width: 100%;
+	display: none;
+	margin-bottom: 50px;
+}

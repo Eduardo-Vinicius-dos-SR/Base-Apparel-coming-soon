@@ -1,0 +1,274 @@
+@media (min-width: 1563px) {
+	.page-content .page-items {
+		width: 35vw;
+		padding-top: 5vh;
+	}
+
+	.page-items .logo {
+		width: 10vw;
+	}
+
+	.page-text .title {
+		font-size: 4vw;
+	}
+
+	.page-text .text,
+	.email-form .email-input {
+		font-size: 1.1vw;
+	}
+
+	.email-form .email-input {
+		border-radius: 1.5vw;
+		padding: 1vw 3.5vw 1vw 1.8vw;
+	}
+	.email-form.invalid .email-input {
+		padding-right: 5vw;
+	}
+
+	.email-form .submit-email button {
+		border-radius: 1.8vw;
+		padding: 1vw 2.8vw;
+	}
+
+	.email-form.invalid .submit-email::before {
+		width: 1.5vw;
+		height: 1.5vw;
+	}
+
+	.email-form .submit-email button img {
+		width: 0.8vw;
+	}
+}
+
+@media (max-width: 1200px) {
+	.page-content .page-items {
+		width: 35vw;
+		padding-top: 50px;
+	}
+
+	.page-items .logo {
+		width: 14vw;
+	}
+
+	.page .page-content {
+		background-image: none;
+	}
+	.page-text .title {
+		font-size: 3.5rem;
+	}
+
+	.page-text .text {
+		font-size: 1.3rem;
+	}
+
+	.email-form .email-input {
+		padding: 12px 50px 12px 25px;
+		font-size: 1.4rem;
+	}
+
+	.email-form .submit-email::before {
+		width: 16px;
+		height: 16px;
+		left: -20px;
+	}
+
+	.email-form .submit-email button {
+		padding: 12px 27px;
+	}
+
+	.email-form .submit-email button img {
+		width: 10px;
+	}
+}
+
+@media (max-width: 800px) {
+	body {
+		height: 120dvh;
+		overflow: auto;
+	}
+
+	.container .page {
+		background-size: 100% 100%;
+	}
+
+	.page .page-content {
+		min-height: 100dvh;
+		width: 100%;
+	}
+
+	.page-content .page-items {
+		max-width: 375px;
+		width: 100%;
+		height: 120dvh;
+		margin-right: 0;
+		padding: 35px 20px 0;
+		background-color: #fff;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+
+	.page-content .logo {
+		max-width: 100px;
+		width: 40%;
+		margin-bottom: 25px;
+		image-rendering: optimizeQuality;
+	}
+
+	.page-content .page-text {
+		margin-top: 0;
+		padding: 30px;
+		text-align: center;
+	}
+
+	.page-text .title {
+		margin-bottom: 15px;
+		font-size: 3rem;
+		letter-spacing: 6px;
+	}
+
+	.page-text .text {
+		margin-bottom: 20px;
+	}
+
+	.page-items .email-form {
+		margin-right: 10px;
+	}
+
+	.hero-desktop {
+		display: none;
+	}
+
+	.hero-mobile {
+		display: block;
+	}
+}
+
+@media (min-height: 550px) and (max-width: 800px) and (min-width: 500px) {
+	body {
+		min-height: 130dvh;
+		overflow: auto;
+	}
+
+	.container .page {
+		min-height: 100dvh;
+		background-size: 100% 100%;
+	}
+
+	.page .page-content {
+		width: 100%;
+	}
+
+	.page-content .page-items {
+		height: 130dvh;
+		max-width: 450px;
+		width: 80%;
+	}
+
+	.page-items .logo {
+		margin-bottom: 35px;
+	}
+
+	.page-items .page-text {
+		margin: 0;
+		padding-top: 0;
+	}
+	.page-text .title {
+		padding: 0 10px;
+		font-size: 4rem;
+		letter-spacing: 10px;
+	}
+
+	.page-text .text {
+		font-size: 1.6rem;
+		margin-bottom: 35px;
+	}
+
+	.email-form .email-input {
+		width: 100%;
+		padding: 15px 70px 15px 25px;
+		font-size: 1.4rem;
+	}
+	.email-form.invalid .email-input {
+		padding-right: 95px;
+	}
+
+	.email-form .submit-email {
+		right: 0;
+	}
+
+	.email-form .submit-email::before {
+		left: -25px;
+		width: 20px;
+		height: 20px;
+	}
+
+	.email-form .submit-email button {
+		padding: 15px 25px;
+	}
+
+	.email-form .submit-email button img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 501px) {
+	body {
+		min-height: 125dvh;
+		overflow: auto;
+		background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+	}
+
+	.page .page-content {
+		background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+	}
+
+	.page-content .page-items {
+		height: 125dvh;
+		width: 100%;
+		padding: 25px 0 0;
+		background-color: inherit;
+	}
+
+	.page-items .logo {
+		width: 25vw;
+		margin-left: 25px;
+		image-rendering: optimizeQuality;
+	}
+
+	.page-content .page-text {
+		text-align: center;
+		padding: 0 0 40px;
+	}
+
+	.page-text .title {
+		padding: 0 20px;
+		font-size: 4rem;
+		letter-spacing: 10px;
+	}
+
+	.page-text .text {
+		margin-bottom: 30px;
+		padding: 0 20px;
+		font-size: 1.4rem;
+	}
+
+	.email-form .email-input {
+		width: 90%;
+		padding: 16px 65px 16px 25px;
+	}
+
+	.email-form .submit-email::before {
+		width: 16px;
+		height: 16px;
+	}
+
+	.email-form .submit-email button {
+		padding: 16px 30px;
+	}
+
+	.hero-mobile {
+		max-width: 450px;
+		width: 100%;
+		margin: 0 auto 50px;
+	}
+}
